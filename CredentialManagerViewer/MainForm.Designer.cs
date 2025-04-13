@@ -74,6 +74,7 @@ namespace CredentialManagerViewer
             this.lblTitle.Size = new System.Drawing.Size(355, 24);
             this.lblTitle.TabIndex = 2;
             this.lblTitle.Text = "Windows Credential Manager Viewer";
+            this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
             // 
             // btnExportToCSV
             // 

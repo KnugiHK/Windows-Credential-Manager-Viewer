@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -322,6 +322,15 @@ namespace CredentialManagerViewer
                 }
                 MessageBox.Show("Credentials exported successfully!", "Success");
             }
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+            Version version = Assembly.GetExecutingAssembly().GetName().Version;
+            MessageBox.Show(
+                "This application is licensed under MIT. For more information, visit: https://github.com/KnugiHK/Windows-Credential-Manager-Viewer",
+                $"Windows Credential Manager Viewer v{version}"
+            );
         }
     }
 }
