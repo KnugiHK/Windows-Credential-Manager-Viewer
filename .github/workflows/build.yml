@@ -33,4 +33,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: Binary
-        path: bin\Release\CredentialManagerViewer.exe
+        path: CredentialManagerViewer\bin\Release\CredentialManagerViewer.exe
